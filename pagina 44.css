@@ -1,0 +1,80 @@
+nav {
+    display: flex;
+    gap: 0.5rem;
+}
+a {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+a:hover {
+    background-color: #fff;
+    color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba
+    (227,27,27,0.9464578067555147) 0%, rgba(233,151,15,1) 12%, 
+    rgba(226,135,20,1) 25%, rgba(231,14,14,1) 39%, rgba(218, 0, 0, 0.075) 55%, rgba(0, 0, 0, 0.042) 65%, rgba(0, 0, 0, 0.097) 79%, rgba(0, 0, 0, 0.114) 100%);
+}
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+.icon:hover {
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+svg circle {
+    stroke-dasharray: 150;
+    /*dibuja trazo*/
+    transition: all .8s ease-in-out;
+}
+.icon:hover circle {
+    stroke-dasharray: 220;
+}

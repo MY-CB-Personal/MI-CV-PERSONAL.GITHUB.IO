@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url(fondo.avif);
+    font-family: sans-serif;
+  }
+  
+  .contenedor {
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+  }
+  
+  .contenedor__label {
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .btn__label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  
+  .btn__label span {
+    width: 50px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: 300ms ease;
+  }
+  
+  #btn__label {
+    display: none;
+  }
+  
+  .menu {
+    background: radial-gradient(circle, rgb(255, 230, 0) 0%, rgb(0, 16, 188) 80%);
+    width: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px; /* Corregido el typo */
+    outline: 5px solid rgb(0, 0, 0);
+    outline-offset: 4px;
+    position: fixed; /* Para que el menú se quede en una posición */
+    top: 50px; /* Ajusta según sea necesario */
+    left: 20px; /* Ajusta según sea necesario */
+    transition: 300ms ease;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu li::before {
+    background-color: rgb(255, 255, 255);
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 3px;
+    opacity: .9;
+    pointer-events: none;
+    transition: 500ms;
+  }
+  
+  .menu li:hover::before {
+    width: 100%;
+  }
+  
+  .menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease;
+  }
+  
+  #btn__label:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  

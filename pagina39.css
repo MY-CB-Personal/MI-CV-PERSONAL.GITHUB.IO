@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    
+}
+.contenedor {
+    width: 95%;
+    max-width: 900px;
+    padding: 32px 64px;
+    margin: auto;
+}
+.social {
+    /*las imágenes usadas tienen width de 48px*/
+    background: radial-gradient(circle, rgb(255, 230, 0) 0%, rgb(0, 16, 188) 80%);
+    width: 54px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+.social {
+    /* Extra centrado vertical*/
+    border: 4px solid #0000004a;
+    border-radius: 22px;
+    padding: 3px;
+    top: 50%;
+    height: auto;
+    /*para poner height 192 deberíamos haber indicado en el reset de estilos fontsize:0;*/
+    margin: auto;
+}

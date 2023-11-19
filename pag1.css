@@ -1,0 +1,69 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiada la fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #000000;
+  }
+
+  /* Slider de Fotos */
+  .slider {
+    width: auto;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .slider img {
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider img:hover {
+    transform: scale(1.1);
+  }
+  section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(159,0,0);
+background: radial-gradient(circle, rgba(159,0,0,1) 0%, rgba(255,252,0,1) 82%, rgba(245,227,255,1) 100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.992);
+    border-radius: 10px;
+    line-height: 1.6; /* Altura de línea */
+  }
+  /* Formulario de Contacto */
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Mapa */
+  #mapa {
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+  /* Estilos de texto comunes */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para títulos */
+    font-weight: bold;
+    color: #000000;
+  }
+  p {
+    margin-bottom: 10px; /* Espaciado inferior para párrafos */
+  }
+  
+  a {
+    color: #0066cc; /* Color de enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #004080; /* Cambio de color al pasar el ratón */
+  }
+  
+  /* Puedes agregar estilos adicionales según sea necesario */

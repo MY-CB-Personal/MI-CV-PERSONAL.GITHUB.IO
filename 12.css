@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #2C3E50;
+    font-family: sans-serif;
+  }
+  
+  .contenedor {
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+    width: 80%; /* Cambiado a porcentaje */
+  }
+  
+  .contenedor__label {
+    background-color: black;
+    width: 80vw; /* Cambiado a vista (viewport width) */
+    height: 80vw; /* Cambiado a vista (viewport width) */
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .btn__label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%; /* Cambiado a porcentaje */
+    font-size: 5vw; /* Cambiado a vista (viewport width) */
+    cursor: pointer;
+  }
+  
+  .btn__label span {
+    width: 20%; /* Cambiado a porcentaje */
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    transition: 300ms ease;
+  }
+  
+  #btn__label {
+    display: none;
+  }
+  
+  .menu {
+    background-color: black;
+    width: 80vw; /* Cambiado a vista (viewport width) */
+    padding: 5%; /* Cambiado a porcentaje */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2vw; /* Cambiado a vista (viewport width) */
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    outline: 2px solid white;
+    outline-offset: 4px;
+    position: fixed;
+    top: 5vw; /* Cambiado a vista (viewport width) */
+    left: 5vw; /* Cambiado a vista (viewport width) */
+    transition: 300ms ease;
+  }
+  
+  .menu li {
+    padding: 2vw 0; /* Cambiado a vista (viewport width) */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu li::before {
+    background-color: white;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 3px;
+    opacity: .9;
+    pointer-events: none;
+    transition: 500ms;
+  }
+  
+  .menu li:hover::before {
+    width: 100%;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw; /* Cambiado a vista (viewport width) */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    gap: .3vw; /* Cambiado a vista (viewport width) */
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease;
+  }
+  
+  #btn__label:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
